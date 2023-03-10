@@ -144,6 +144,64 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "gerar codigo recuperacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"arthur.p.palma@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/gerar-codigo-recuperacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"gerar-codigo-recuperacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar senha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"arthur.p.palma@gmail.com\",\r\n    \"codigoRecuperacao\":\"10032023114331431\",\r\n    \"senhaRedefinida\":\"teste123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/alterar-senha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"alterar-senha"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
