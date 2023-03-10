@@ -23,6 +23,10 @@ CREATE TABLE permissao (
                            nome VARCHAR(100) NOT NULL,
                            usuario_id BIGINT NOT NULL
 );
+
+
 ALTER TABLE permissao ADD CONSTRAINT pk_permissao PRIMARY KEY (id);
 ALTER TABLE permissao ADD CONSTRAINT uk_permissao UNIQUE (nome, usuario_id);
 ALTER TABLE permissao ADD CONSTRAINT fk_permissao_usuario FOREIGN KEY (usuario_id) REFERENCES usuario;
+
+
