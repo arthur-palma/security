@@ -1,4 +1,4 @@
-package br.com.cwi.api.security;
+package br.com.cwi.api.security.config;
 
 import br.com.cwi.api.security.domain.Usuario;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

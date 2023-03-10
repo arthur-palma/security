@@ -1,7 +1,7 @@
 package br.com.cwi.api.security.service;
 
-import br.com.cwi.api.security.UsuarioSecurity;
-import br.com.cwi.api.security.repository.UsuarioRepository;
+import br.com.cwi.api.security.config.UsuarioSecurity;
+import br.com.cwi.api.repository.UsuarioRepository;
 import br.com.cwi.api.security.domain.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

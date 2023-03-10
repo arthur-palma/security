@@ -34,6 +34,8 @@ public class Usuario {
     private LocalDateTime alteradoEm;
     private String fotoUrl;
     private String senha;
+    private String codigoRecuperacao;
+    private LocalDateTime dataEnvioCodigo;
 
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.EAGER)

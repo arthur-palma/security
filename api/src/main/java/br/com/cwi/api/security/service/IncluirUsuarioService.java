@@ -4,7 +4,7 @@ import br.com.cwi.api.controller.request.UsuarioRequest;
 import br.com.cwi.api.controller.response.UsuarioResponse;
 import br.com.cwi.api.security.domain.Permissao;
 import br.com.cwi.api.security.domain.Usuario;
-import br.com.cwi.api.security.repository.UsuarioRepository;
+import br.com.cwi.api.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
